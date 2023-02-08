@@ -1,24 +1,29 @@
+/* reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* colors */
 :root {
   --orange: #ff6900;
   --black: #1a1a1a;
   --green: #008000;
   --red: #ff0000;
 }
+
+/* body */
 body {
-  height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* header */
 header {
   background-color: var(--orange);
   color: white;
   padding: 1.5rem;
 }
-
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -36,7 +41,97 @@ nav ul li {
 li {
   cursor: pointer;
 }
+
 /* main */
+.card img {
+  width: 100%;
+  display: block;
+}
+.card {
+  position: relative;
+  padding: 1rem;
+}
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.hearts {
+  background-color: white;
+  font-size: larger;
+  position: absolute;
+  text-align: center;
+  right: 10px;
+  top: 30px;
+  padding-left: 0.5rem;
+  padding-right: 0.7rem;
+}
+.hearts:hover {
+  color: red;
+}
+.sconto {
+  background-color: var(--red);
+  color: white;
+  position: absolute;
+  left: 16px;
+  bottom: 110px;
+  font-size: 0.6rem;
+  padding: 0.2rem;
+}
+.sostenibilità2 {
+  background-color: var(--green);
+  color: white;
+  position: absolute;
+  left: 16px;
+  bottom: 110px;
+  font-size: 0.6rem;
+  padding: 0.2rem;
+}
+.sostenibilità {
+  background-color: var(--green);
+  color: white;
+  position: absolute;
+  left: 51px;
+  bottom: 110px;
+  font-size: 0.6rem;
+  padding: 0.2rem;
+}
+.brand {
+  font-size: 0.6rem;
+}
+.bold {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.price {
+  color: var(--red);
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+.linetext {
+  text-decoration: line-through;
+  color: var(--black);
+}
+
+/* footer */
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2rem;
+}
+footer h3 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+footer h4 {
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+footer ul li {
+  font-size: 0.7rem;
+  padding-right: 0.5rem;
+}
 
 /* flex position */
 .displayflex {
@@ -49,10 +144,6 @@ li {
 
 .align-center {
   align-items: center;
-}
-
-.flow-column {
-  flex-flow: column wrap;
 }
 
 .justify-center {
